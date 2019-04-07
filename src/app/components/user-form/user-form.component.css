@@ -1,0 +1,19 @@
+div.user-form {
+    margin:0 50px;
+    text-align: center;
+}
+form div.form.group {
+    padding-bottom: 2%;
+}
+form label {
+    padding-right: 4px;
+    font-size:20px;
+}
+form input.form-control {
+    opacity:0.8;
+    font-size: 20px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}

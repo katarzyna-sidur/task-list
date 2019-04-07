@@ -1,0 +1,53 @@
+div.footer {
+    background-color: #232323;
+}
+
+.row.footer {
+    margin:0;
+}
+
+h3.title-footer {
+    color:white;
+    padding: 4% 7% 2% 20%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.row.footer b {
+    color: #ffccff;
+}
+i.fas.fa-pen-fancy {
+    color: #ffccff;
+    font-size:30px;
+    padding-right:2%;
+}
+.social-media.col-md-7.col-sm-12 ul li {
+     margin-right: 5%;
+     float: right;
+    
+}
+.social-media.col-md-7.col-sm-12 ul {
+    margin-bottom:0;
+    padding:3% 0%;
+    padding-right: 15%;
+}
+a.icon-transition {
+    text-decoration: none;
+    display: block;
+}
+a.icon-transition span {
+    color: white;
+    display: block;
+    height: 38px;
+    line-height: 34px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    width: 38px;
+    font-size: 24px;
+    text-align: center;
+}
+
+a.icon-transition span:hover {
+    color: #ffccff;
+     border-color: #ffccff;
+
+}

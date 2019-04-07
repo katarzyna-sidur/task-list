@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "name": "Kasia",
+      "email": "katarzyna.sidur@gmail.com",
+      "login": "misskejtes",
+      "password": "10lipiecc123",
+      "id": 1
+    }
+  ],
+  "tasks": [
+    {
+      "title": "zrobić  pipe do sortowania po dacie",
+      "isDone": false,
+      "startDate": "2019-04-04T11:59:25.000Z",
+      "finishDate": "2019-04-05T11:59:25.000Z",
+      "userId": null,
+      "properties": "green",
+      "id": 1
+    },
+    {
+      "title": "skończyć listę zadań ",
+      "isDone": false,
+      "startDate": "2019-04-04T11:59:25.000Z",
+      "finishDate": "2019-04-12T11:59:25.000Z",
+      "userId": null,
+      "properties": "yellow",
+      "id": 2
+    },
+    {
+      "title": "zrobić pipe do zmiany pierwszej litery",
+      "isDone": true,
+      "startDate": "2019-04-05T11:59:25.000Z",
+      "finishDate": "2019-04-05T11:59:25.000Z",
+      "userId": null,
+      "properties": "green",
+      "id": 3
+    },
+    {
+      "title": "siłownia nogi",
+      "isDone": true,
+      "startDate": "2019-04-05T11:59:25.000Z",
+      "finishDate": "2019-04-05T11:59:25.000Z",
+      "userId": null,
+      "properties": "violet",
+      "id": 4
+    },
+    {
+      "title": "zrobić edycje tasków",
+      "isDone": false,
+      "startDate": "2019-04-05T11:59:25.000Z",
+      "finishDate": "2019-04-05T11:59:25.000Z",
+      "userId": null,
+      "properties": "yellow",
+      "id": 5
+    },
+    {
+      "title": "zmiana flagi isDone",
+      "isDone": true,
+      "startDate": "2019-04-05T11:59:25.000Z",
+      "finishDate": "2019-04-05T11:59:25.000Z",
+      "userId": null,
+      "properties": "yellow",
+      "id": 6
+    },
+    {
+      "title": "usuwanie tasków",
+      "isDone": false,
+      "startDate": "2019-04-05T11:59:25.000Z",
+      "finishDate": "2019-04-05T11:59:25.000Z",
+      "userId": null,
+      "properties": "yellow",
+      "id": 7
+    },
+    {
+      "title": "nauczyć się gita",
+      "isDone": false,
+      "startDate": "2019-04-05T11:59:25.000Z",
+      "finishDate": "2019-04-08T11:59:25.000Z",
+      "userId": null,
+      "properties": "yellow",
+      "id": 8
+    },
+    {
+      "title": "angielski 10 nowych słów",
+      "isDone": false,
+      "startDate": "2019-04-05T11:59:25.000Z",
+      "finishDate": "2019-04-05T11:59:25.000Z",
+      "userId": null,
+      "properties": "blue",
+      "id": 9
+    },
+    {
+      "title": "zliczanie zadań na na dziś i zaległych",
+      "isDone": false,
+      "startDate": "2019-04-05T11:59:25.000Z",
+      "finishDate": "2019-04-07T11:59:25.000Z",
+      "userId": null,
+      "properties": "green",
+      "id": 10
+    },
+    {
+      "title": "zrobić przesuń i upuść z ngx",
+      "isDone": false,
+      "startDate": "2019-04-05T11:59:25.000Z",
+      "finishDate": "2019-04-05T11:59:25.000Z",
+      "userId": null,
+      "properties": "green",
+      "id": 11
+    },
+    {
+      "title": "dodać zliczanie zadań do zrobienia i wykonanych",
+      "isDone": true,
+      "startDate": "2019-04-05T12:10:37.000Z",
+      "finishDate": "2019-04-05T12:10:37.000Z",
+      "userId": null,
+      "properties": "yellow",
+      "id": 12
+    },
+    {
+      "title": "wystylizować listę wykonanych zadań",
+      "isDone": false,
+      "startDate": "2019-04-05T12:22:56.000Z",
+      "finishDate": "2019-04-05T12:22:56.000Z",
+      "userId": null,
+      "properties": "green",
+      "id": 13
+    }
+  ]
+}

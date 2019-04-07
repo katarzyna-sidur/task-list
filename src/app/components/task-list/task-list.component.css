@@ -1,0 +1,113 @@
+div.container-fliud {
+    background-image: url('src/assets/images/planer_5.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    padding:0;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+}
+
+div.overlay-bg {
+    background-color: rgba(128, 128, 128,0.5);
+    position: relative;
+    min-height: 650px;
+}
+
+div.container.tasklist {
+    position: static;
+   padding:3% 0;
+    max-width: 80%;
+}
+
+div.row.panel1 {
+    background-color: rgba(255, 204, 255, 0.8);
+    padding: 1% 0%;
+}
+div.col-md-2.button {
+    text-align: center;
+}
+div.col-md-2.done {
+    padding-top:8px;
+}
+
+button.add-task {
+    background-color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    margin-left:2%;
+    border-radius: 24px;
+    padding:10px;
+    font-weight: bold;
+    border:1px solid white;
+}
+button.add-task:hover {
+   background-color: transparent;
+   color:white;
+    
+}
+button.add-task:focus {
+    outline: none;
+}
+
+i.fas.fa-calendar-alt {
+    color: white;
+    font-size:28px;
+    padding-top: 5px;
+}
+
+a.show-done {
+    padding-top:8px;
+    font-size:18px;
+    color:white;
+}
+a.show-done:hover {
+    color:black;
+}
+
+div.row.panel2 {
+    background-color:  rgba(255, 255, 255, 0.8);
+    min-height: 500px;
+}
+
+div.row.panel.add-task {
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+div.col-md-6.tasklist {
+    border: 1px solid darkgrey;
+}
+
+h4.title-list {
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 5px 0 0 5px;
+    text-align: center;
+}
+ button.add-task.save {
+     margin-top:25%;
+ }
+ .row.panel.add-task label {
+     font-weight: 600;
+ }
+ select option[value="blue"] {
+  background: rgba(179, 179, 255, 0.3);
+}
+
+select option[value="violet"] {
+  background: rgba(204, 153, 255, 0.3);
+}
+
+select option[value="yellow"] {
+  background: rgba(255, 255, 153, 0.3);
+}
+
+select option[value="green"] {
+  background: rgba(204, 255, 204, 0.3);
+}
+
+div.tasklistLength {
+    padding-bottom:2%;
+    text-decoration: underline;
+}

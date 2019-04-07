@@ -1,0 +1,33 @@
+div.content {
+   padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #effff7;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+    margin-top:2%;
+}
+div.row.content{
+   margin-left: 10%;
+   margin-right: 10%;
+   text-align: center;
+   margin-top:0;
+   padding-top:2%;
+   padding-bottom: 1%;
+}
+
+h2.title-content {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h4.step-title {
+    text-transform: uppercase;
+}
+div.col-12.col-md-3.steps i.far {
+    font-size:26px;
+    padding-bottom: 15px;
+}
+div.col-12.col-md-3.steps {
+    padding-bottom: 2%;
+}

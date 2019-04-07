@@ -1,0 +1,61 @@
+<div class="user-form" role="form">
+    <form #userForm="ngForm">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+            </div>
+            <input id="name" required type="text" class="form-control" placeholder="Imię" aria-label="Username"
+                aria-describedby="basic-addon1" name="first" [(ngModel)]="user.name" #nameControl="ngModel"
+                [class.is-invalid]="nameControl.invalid  && nameControl.touched" [class.is-valid]="nameControl.valid">
+            <span class="invalid-feedback" *ngIf="nameControl.invalid  && nameControl.touched">
+                Pole jest wymagane
+            </span>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-at"></i></span>
+            </div>
+            <input id="email" required [email]="user.email!==''" required type="text" class="form-control"
+                placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" name="email"
+                [(ngModel)]="user.email" #emailControl="ngModel"
+                [class.is-invalid]="emailControl.invalid && emailControl.touched"
+                [class.is-valid]="emailControl.valid">
+            <span class="invalid-feedback" *ngIf="emailControl.errors?.required && emailControl.touched">Pole jest wymagane</span>
+            <span class="invalid-feedback" *ngIf="emailControl.errors?.email">Email jest nieprawidłowy</span>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-tag"></i></span>
+            </div>
+            <input id="login" required type="text" minlength="5" class="form-control" placeholder="Login" aria-label="Login"
+                aria-describedby="basic-addon1" name="login" [(ngModel)]="user.login" #loginControl="ngModel"
+                [class.is-invalid]="loginControl.invalid && loginControl.touched"
+                [class.is-valid]="loginControl.valid">
+            <span class="invalid-feedback" *ngIf="loginControl.errors?.required && loginControl.touched">Pole jest wymagane</span>
+            <span class="invalid-feedback" *ngIf="loginControl.errors?.minlength">Wymagana liczba znaków min.5</span>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-unlock"></i></span>
+            </div>
+            <input id="password" required type="password" pattern="^^[a-z0-9_-]{6,15}$" minlength="6" class="form-control" placeholder="Hasło" aria-label="Password"
+                aria-describedby="basic-addon1" name="password" [(ngModel)]="user.password" #passwordControl="ngModel"
+                [class.is-invalid]="passwordControl.invalid && passwordControl.touched"
+                [class.is-valid]="passwordControl.valid">
+            <span class="invalid-feedback" *ngIf="passwordControl.errors?.required && passwordControl.touched">Pole jest wymagane</span>
+            <span class="invalid-feedback" *ngIf="passwordControl.errors?.pattern">Hasło powinno składać się z liter i liczb</span>
+            <span class="invalid-feedback" *ngIf="passwordControl.errors?.minlength">Hasło powinno zawierać od 6 do 15 znaków</span>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-unlock"></i></span>
+            </div>
+            <input id="confirmPassword" required type="password" class="form-control" placeholder="Powtórz hasło" aria-label="ConfirmPassword"
+                aria-describedby="basic-addon1" appConfirmEqualValidator="password" name="confirmPassword" [(ngModel)]="confirmPassword" #confirmPasswordControl="ngModel" 
+                [class.is-invalid]="confirmPasswordControl.invalid && confirmPasswordControl.touched"
+                [class.is-valid]="confirmPasswordControl.valid">
+            <span class="invalid-feedback" *ngIf="confirmPasswordControl.errors?.required && confirmPasswordControl.touched">Pole jest wymagane</span>
+            <span class="invalid-feedback" *ngIf="confirmPasswordControl.errors?.notEqual && !confirmPasswordControl.errors?.required">Hasła nie są takie same</span>
+        </div>
+    </form>
+</div>

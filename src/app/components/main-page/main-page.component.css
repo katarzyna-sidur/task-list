@@ -1,0 +1,13 @@
+img.photo{
+   height: 450px;
+   vertical-align: middle;
+   width: 100%;
+}
+div.photo-gallery{
+   margin:2% 10%;
+}
+
+
+.col-md-6.photo {
+    padding:0;
+}

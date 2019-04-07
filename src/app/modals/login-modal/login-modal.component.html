@@ -1,0 +1,19 @@
+<div class="modal-login">
+    <div class="overlay-opacity">
+        <div class="modal-header">
+            <h4 class="modal-title">Zaloguj się</h4>
+        </div>
+        <div class="modal-body">
+            <input id="login" required type="text" minlength="5" class="form-control" placeholder="Login"
+                aria-label="Login" aria-describedby="basic-addon1" name="login"  autocomplete="off">
+
+            <input id="password" required type="password" pattern="^^[a-z0-9_-]{6,15}$" minlength="6"
+                class="form-control" placeholder="Hasło" aria-label="Password" aria-describedby="basic-addon1"
+                name="password">
+        </div>
+        <div class="modal-footer">
+            <a class="go-singup" routerLink="registration" (click)="bsModalRef.hide()">Nie mam jeszcze konta</a><button
+                type="button" class="btn btn-light login">Zaloguj</button>
+        </div>
+    </div>
+</div>
