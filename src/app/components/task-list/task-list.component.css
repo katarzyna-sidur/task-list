@@ -111,3 +111,7 @@ div.tasklistLength {
     padding-bottom:2%;
     text-decoration: underline;
 }
+
+i.fas.fa-times {
+    padding: 0 2%;
+}

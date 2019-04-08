@@ -49,7 +49,7 @@
                     <h4 class="title-list">Wykonane zadania</h4>
                     <div class="tasklistLength">Liczba wykonanych zadań: <b>{{getTaskDone().length}}</b> </div>
                     <div *ngFor="let item of getTaskDone() |sortByDate">
-                        {{item.title  | changeLetter}}
+                        {{item.title  | changeLetter}} <i class="fas fa-times" (click)="deleteTask(item)"></i>
                     </div>
                 </div>
             </div>

@@ -32,5 +32,9 @@ export class TaskService {
         });
     }
 
+    deleteTask (task: Task): Observable<Task> {
+        return this.httpClient.delete<Task>(`${this.baseUrl}/${task.id.toString()}`);
+    }
+
 
 }

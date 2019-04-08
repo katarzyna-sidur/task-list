@@ -119,4 +119,6 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+db.json
+
 # End of https://www.gitignore.io/api/node,angular
