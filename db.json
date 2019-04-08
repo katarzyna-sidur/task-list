@@ -11,7 +11,7 @@
   "tasks": [
     {
       "title": "zrobić  pipe do sortowania po dacie",
-      "isDone": false,
+      "isDone": true,
       "startDate": "2019-04-04T11:59:25.000Z",
       "finishDate": "2019-04-05T11:59:25.000Z",
       "userId": null,
@@ -74,7 +74,7 @@
     },
     {
       "title": "nauczyć się gita",
-      "isDone": false,
+      "isDone": true,
       "startDate": "2019-04-05T11:59:25.000Z",
       "finishDate": "2019-04-08T11:59:25.000Z",
       "userId": null,
@@ -125,6 +125,33 @@
       "userId": null,
       "properties": "green",
       "id": 13
+    },
+    {
+      "title": "siłownia góra",
+      "isDone": false,
+      "startDate": "2019-04-08T09:55:57.000Z",
+      "finishDate": "2019-04-08T09:55:57.000Z",
+      "userId": null,
+      "properties": "violet",
+      "id": 14
+    },
+    {
+      "title": "dyrektywa do podkreślenia zaległych zadań",
+      "isDone": false,
+      "startDate": "2019-04-08T09:58:12.000Z",
+      "finishDate": "2019-04-10T09:58:12.000Z",
+      "userId": null,
+      "properties": "green",
+      "id": 15
+    },
+    {
+      "title": "rozliczyć zakupy, przelew za mieszkanie siłownie internet",
+      "isDone": false,
+      "startDate": "2019-04-08T10:05:17.000Z",
+      "finishDate": "2019-04-08T10:05:17.000Z",
+      "userId": null,
+      "properties": "violet",
+      "id": 16
     }
   ]
 }

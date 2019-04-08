@@ -1,8 +1,6 @@
-<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-    <div class="task {{task.properties}}" *ngFor="let task of tasks" cdkDrag>
-        <span><i class="far fa-check-circle" (click)="setTaskDone(task)"></i>
-            <h5>{{task.title  | changeLetter}}</h5>
-        </span>
-        <span>{{task.finishDate | date:'mediumDate'}}</span> <i class="far fa-edit"></i>
-    </div>
+<div class="task {{task.properties}}" *ngFor="let task of tasks">
+    <span><i class="far fa-check-circle" (click)="setTaskDone(task)"></i>
+        <h5>{{task.title  | changeLetter}}</h5>
+    </span>
+    <span>{{task.finishDate | date:'mediumDate'}}</span> <i class="far fa-edit"></i>
 </div>

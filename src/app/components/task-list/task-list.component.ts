@@ -3,7 +3,6 @@ import { BsDatepickerConfig } from 'ngx-bootstrap';
 import { TaskService } from 'src/app/services/task.service';
 import { Task } from 'src/app/models/task.model';
 import { ActivatedRoute } from '@angular/router';
-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
     selector: 'app-task-list',
@@ -57,10 +56,5 @@ export class TaskListComponent implements OnInit {
             return item.isDone === true;
         });
     }
-    drop(event: CdkDragDrop<Task[]>) {
-    moveItemInArray(this.tasks, event.previousIndex, event.currentIndex);
-  }
-  drop2(event: CdkDragDrop<Task[]>) {
-    moveItemInArray(this.getTaskDone(), event.previousIndex, event.currentIndex);
-  }
+
 }

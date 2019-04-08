@@ -19,7 +19,6 @@ import { TaskListResolver } from './resolvers/task-list.resolver';
 import { TaskComponent } from './components/task/task.component';
 import { ChangeLetterPipe } from './pipes/change-letter.pipe';
 import { SortByDatePipe } from './pipes/sort-by-date.pipe';
-import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 const appRoutes: Routes = [
@@ -55,8 +54,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     ModalModule.forRoot(),
     BsDatepickerModule.forRoot(),
-    SortableModule.forRoot(),
-    DragDropModule,
+    SortableModule.forRoot()
   ],
     entryComponents: [
       LoginModalComponent

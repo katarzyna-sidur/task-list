@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Task } from 'src/app/models/task.model';
 import { TaskService } from 'src/app/services/task.service';
-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-task',
@@ -23,9 +22,4 @@ export class TaskComponent implements OnInit {
     this.taskService.updateTask(item).subscribe((data) => {
     });
   }
-
-  drop(event: CdkDragDrop<Task[]>) {
-        moveItemInArray(this.tasks, event.previousIndex, event.currentIndex);
-    }
-
 }

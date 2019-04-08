@@ -43,21 +43,13 @@
                 <div class="col-md-6 tasklist">
                     <h4 class="title-list">Zadania do wykonania</h4>
                     <div class="tasklistLength">Liczba zadań do wykonania: <b>{{getTaskToDo().length}}</b> </div>
-                    <app-task [tasks]="getTaskToDo()"></app-task>
+                    <app-task [tasks]="getTaskToDo() |sortByDate"></app-task>
                 </div>
                 <div class="col-md-6 tasklist">
                     <h4 class="title-list">Wykonane zadania</h4>
-                    <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-                        <div class="tasklistLength">Liczba wykonanych zadań: <b>{{getTaskDone().length}}</b> </div>
-                        <div *ngFor="let item of getTaskDone()" cdkDrag>
-                            {{item.title  | changeLetter}}
-                        </div>
-                    </div>
-                     <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-                        <div class="tasklistLength">Liczba 2 wykonanych zadań: <b>{{task.length}}</b> </div>
-                        <div *ngFor="let item of tasks" cdkDrag>
-                            {{item.title  | changeLetter}}
-                        </div>
+                    <div class="tasklistLength">Liczba wykonanych zadań: <b>{{getTaskDone().length}}</b> </div>
+                    <div *ngFor="let item of getTaskDone() |sortByDate">
+                        {{item.title  | changeLetter}}
                     </div>
                 </div>
             </div>
