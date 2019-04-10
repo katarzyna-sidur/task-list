@@ -107,6 +107,11 @@ select option[value="green"] {
   background: rgba(204, 255, 204, 0.3);
 }
 
+div.taskdone {
+    padding:1% 0 1% 0;
+    font-size: 17px;
+}
+
 div.tasklistLength {
     text-decoration: underline;
     padding: 2% 0 3% 0;
@@ -139,6 +144,7 @@ i.far.fa-check-circle {
     float:left;
     text-align: center;
     padding-top: 2%;
+     pointer-events: auto;
 }
 
 div.task.green {
@@ -159,5 +165,19 @@ div.task.yellow {
 i.fas.fa-trash, i.far.fa-edit {
     float :right;
     padding: 0 1%;
+}
+i.fas.fa-trash:hover, i.fas.fa-times:hover {
+    color:red;
+}
 
+ i.fas.fa-reply {
+     padding: 0 1% 0 0;
+ }  
+
+ i.fas.fa-reply:hover, i.far.fa-edit:hover, i.far.fa-check-circle:hover  {
+     color:green;
+ }
+
+.pointer {
+    cursor: pointer;
 }

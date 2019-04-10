@@ -52,6 +52,12 @@ export class TaskListComponent implements OnInit {
         });
     }
 
+    setTaskToDo(item: Task) {
+        item.isDone = false;
+        this.taskService.updateTask(item).subscribe((data) => {
+        });
+    }
+
     getTaskToDo() {
         return this.tasks.filter((item: Task) => {
             return item.isDone === false;

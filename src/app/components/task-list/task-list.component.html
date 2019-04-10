@@ -48,17 +48,17 @@
                         <div class="col-md-4 tasklistLength">Liczba zaległych zadań: <b>{{getOverdueTask().length}}</b> </div>
                     </div>
                     <div class="task {{task.properties}}" *ngFor="let task of getTaskToDo() |sortByDate">
-                        <span><i class="far fa-check-circle" (click)="setTaskDone(task)"></i>
-                            <h5>{{task.title  | changeLetter}}</h5><i class="fas fa-trash" (click)="deleteTask(task)"></i>
+                        <span><i class="far fa-check-circle pointer" (click)="setTaskDone(task)"></i>
+                            <h5>{{task.title  | changeLetter}}</h5><i class="fas fa-trash pointer" (click)="deleteTask(task)"></i>
                         </span>
-                        <span>{{task.finishDate | date:'mediumDate'}}</span> <i class="far fa-edit"></i>
+                        <span>{{task.finishDate | date:'mediumDate'}}</span> <i class="far fa-edit pointer"></i>
                     </div>
                 </div>
                 <div class="col-md-6 tasklist">
                     <h4 class="title-list">Wykonane zadania</h4>
                     <div class="tasklistLengthDone">Liczba wykonanych zadań: <b>{{getTaskDone().length}}</b> </div>
-                    <div *ngFor="let item of getTaskDone() |sortByDate">
-                        {{item.title  | changeLetter}} <i class="fas fa-times" (click)="deleteTask(item)"></i>
+                    <div class="taskdone" *ngFor="let item of getTaskDone() |sortByDate">
+                       <i class="fas fa-reply pointer" (click)="setTaskToDo(item)"></i> {{item.title  | changeLetter}} <i class="fas fa-times pointer" (click)="deleteTask(item)"></i>
                     </div>
                 </div>
             </div>
