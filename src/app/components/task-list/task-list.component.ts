@@ -19,12 +19,13 @@ export class TaskListComponent implements OnInit {
         isDone: false,
         startDate: null,
         finishDate: null,
-        userId: null,
+        userId: 1,
         properties: null,
         id: null,
     };
 
     tasks: Task[] = [];
+    myDate = new Date().toDateString();
 
     constructor(private taskService: TaskService, private route: ActivatedRoute) {
         this.dpConfig.containerClass = 'theme-default';
@@ -42,6 +43,12 @@ export class TaskListComponent implements OnInit {
             this.task.startDate = null;
             this.task.finishDate = null;
             this.task.properties = '';
+        });
+    }
+
+    setTaskDone(item: Task) {
+        item.isDone = true;
+        this.taskService.updateTask(item).subscribe((data) => {
         });
     }
 

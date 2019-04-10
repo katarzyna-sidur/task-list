@@ -43,7 +43,12 @@
                 <div class="col-md-6 tasklist">
                     <h4 class="title-list">Zadania do wykonania</h4>
                     <div class="tasklistLength">Liczba zadań do wykonania: <b>{{getTaskToDo().length}}</b> </div>
-                    <app-task [tasks]="getTaskToDo() |sortByDate"></app-task>
+                    <div class="task {{task.properties}}" *ngFor="let task of getTaskToDo() |sortByDate">
+                        <span><i class="far fa-check-circle" (click)="setTaskDone(task)"></i>
+                            <h5>{{task.title  | changeLetter}}</h5><i class="fas fa-trash" (click)="deleteTask(task)"></i>
+                        </span>
+                        <span>{{task.finishDate | date:'mediumDate'}}</span> <i class="far fa-edit"></i>
+                    </div>
                 </div>
                 <div class="col-md-6 tasklist">
                     <h4 class="title-list">Wykonane zadania</h4>

@@ -115,3 +115,43 @@ div.tasklistLength {
 i.fas.fa-times {
     padding: 0 2%;
 }
+h5 {
+    font-weight: bold;
+    width: 80%;
+}
+
+div.task {
+    width: 90%;
+    padding:2%;
+   margin: auto;
+    background-color: rgba(255, 204, 153, 0.7);
+    margin-bottom: 3%;
+}
+
+i.far.fa-check-circle {
+    width: 20%;
+    float:left;
+    text-align: center;
+    padding-top: 2%;
+}
+
+div.task.green {
+    background: rgba(153, 255, 206, 0.7);
+}
+
+div.task.blue {
+     background: rgba(179, 179, 255, 0.7);
+}
+
+div.task.violet {
+    background: rgba(204, 153, 255, 0.7);
+}
+
+div.task.yellow {
+    background: rgba(255, 255, 153, 0.7);
+}
+i.fas.fa-trash, i.far.fa-edit {
+    float :right;
+    padding: 0 1%;
+
+}

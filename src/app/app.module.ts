@@ -16,9 +16,9 @@ import { ModalModule, BsDatepickerModule, SortableModule } from 'ngx-bootstrap';
 import { LoginModalComponent } from './modals/login-modal/login-modal.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
 import { TaskListResolver } from './resolvers/task-list.resolver';
-import { TaskComponent } from './components/task/task.component';
 import { ChangeLetterPipe } from './pipes/change-letter.pipe';
 import { SortByDatePipe } from './pipes/sort-by-date.pipe';
+import { ChnageColorDirective } from './directives/chnage-color.directive';
 
 
 const appRoutes: Routes = [
@@ -42,9 +42,9 @@ const appRoutes: Routes = [
     ConfirmEqualValidatorDirective,
     LoginModalComponent,
     TaskListComponent,
-    TaskComponent,
     ChangeLetterPipe,
-    SortByDatePipe
+    SortByDatePipe,
+    ChnageColorDirective
   ],
   imports: [
     BrowserModule,

@@ -36,5 +36,4 @@ export class TaskService {
         return this.httpClient.delete<Task>(`${this.baseUrl}/${task.id.toString()}`);
     }
 
-
 }
