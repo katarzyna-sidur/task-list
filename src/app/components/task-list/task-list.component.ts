@@ -3,6 +3,7 @@ import { BsDatepickerConfig } from 'ngx-bootstrap';
 import { TaskService } from 'src/app/services/task.service';
 import { Task } from 'src/app/models/task.model';
 import { ActivatedRoute } from '@angular/router';
+import { bindCallback } from 'rxjs';
 
 @Component({
     selector: 'app-task-list',
@@ -90,5 +91,11 @@ export class TaskListComponent implements OnInit {
             && new Date(item.finishDate).toDateString() !== new Date().toDateString()
             && item.isDone === false;
         });
+    }
+
+    getColor(item: Task) {
+       return new Date(item.finishDate) < new Date()
+            && new Date(item.finishDate).toDateString() !== new Date().toDateString()
+            && item.isDone === false ? 'red' : 'black';
     }
 }

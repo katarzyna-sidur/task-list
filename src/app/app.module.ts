@@ -18,8 +18,6 @@ import { TaskListComponent } from './components/task-list/task-list.component';
 import { TaskListResolver } from './resolvers/task-list.resolver';
 import { ChangeLetterPipe } from './pipes/change-letter.pipe';
 import { SortByDatePipe } from './pipes/sort-by-date.pipe';
-import { ChnageColorDirective } from './directives/chnage-color.directive';
-
 
 const appRoutes: Routes = [
     { path: 'home', component: MainPageComponent },
@@ -43,8 +41,7 @@ const appRoutes: Routes = [
     LoginModalComponent,
     TaskListComponent,
     ChangeLetterPipe,
-    SortByDatePipe,
-    ChnageColorDirective
+    SortByDatePipe
   ],
   imports: [
     BrowserModule,
