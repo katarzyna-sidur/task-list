@@ -71,4 +71,18 @@ export class TaskListComponent implements OnInit {
             });
         });
     }
+
+    getTodayTask() {
+        return this.tasks.filter((item: Task) => {
+            return new Date(item.finishDate).toDateString() === new Date().toDateString() && item.isDone === false;
+        });
+    }
+
+    getOverdueTask() {
+        return this.tasks.filter((item: Task) => {
+            return new Date(item.finishDate) < new Date()
+            && new Date(item.finishDate).toDateString() !== new Date().toDateString()
+            && item.isDone === false;
+        });
+    }
 }

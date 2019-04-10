@@ -42,7 +42,11 @@
             <div class="row panel2">
                 <div class="col-md-6 tasklist">
                     <h4 class="title-list">Zadania do wykonania</h4>
-                    <div class="tasklistLength">Liczba zadań do wykonania: <b>{{getTaskToDo().length}}</b> </div>
+                    <div class="row">
+                        <div class="col-md-4 tasklistLength"> Liczba zadań do wykonania: <b>{{getTaskToDo().length}}</b></div>
+                        <div class="col-md-4 tasklistLength">Liczba zadań na dziś: <b>{{getTodayTask().length}}</b> </div>
+                        <div class="col-md-4 tasklistLength">Liczba zaległych zadań: <b>{{getOverdueTask().length}}</b> </div>
+                    </div>
                     <div class="task {{task.properties}}" *ngFor="let task of getTaskToDo() |sortByDate">
                         <span><i class="far fa-check-circle" (click)="setTaskDone(task)"></i>
                             <h5>{{task.title  | changeLetter}}</h5><i class="fas fa-trash" (click)="deleteTask(task)"></i>
@@ -52,7 +56,7 @@
                 </div>
                 <div class="col-md-6 tasklist">
                     <h4 class="title-list">Wykonane zadania</h4>
-                    <div class="tasklistLength">Liczba wykonanych zadań: <b>{{getTaskDone().length}}</b> </div>
+                    <div class="tasklistLengthDone">Liczba wykonanych zadań: <b>{{getTaskDone().length}}</b> </div>
                     <div *ngFor="let item of getTaskDone() |sortByDate">
                         {{item.title  | changeLetter}} <i class="fas fa-times" (click)="deleteTask(item)"></i>
                     </div>

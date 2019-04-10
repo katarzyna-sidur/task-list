@@ -108,8 +108,14 @@ select option[value="green"] {
 }
 
 div.tasklistLength {
-    padding-bottom:2%;
     text-decoration: underline;
+    padding: 2% 0 3% 0;
+    text-align: center;
+}
+div.tasklistLengthDone {
+    text-align: left;
+    text-decoration: underline;
+    padding: 2% 0 3% 0;
 }
 
 i.fas.fa-times {
